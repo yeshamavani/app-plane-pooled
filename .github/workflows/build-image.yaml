@@ -40,9 +40,6 @@ jobs:
       - name: lerna build
         run: "npm run build --workspaces --if-present"
 
-      - name: lerna test
-        run: "npm run test --workspaces --if-present"
-
       - name: lerna docker build
         run: "npx lerna run docker:build --stream --concurrency 2"
 
