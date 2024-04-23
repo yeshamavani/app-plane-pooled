@@ -1,7 +1,7 @@
 {
   "name": "pooled-authentication",
   "version": "0.0.1",
-  "description": "authentication",
+  "description": "authentication.",
   "keywords": [
     "loopback-microservice",
     "loopback"
