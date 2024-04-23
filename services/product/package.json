@@ -1,7 +1,7 @@
 {
   "name": "pooled-product",
   "version": "0.0.1",
-  "description": "product",
+  "description": "product.",
   "keywords": [
     "loopback-microservice",
     "loopback"

@@ -1,7 +1,7 @@
 {
   "name": "pooled-audit",
   "version": "0.0.1",
-  "description": "audit",
+  "description": "audit.",
   "keywords": [
     "loopback-microservice",
     "loopback"
