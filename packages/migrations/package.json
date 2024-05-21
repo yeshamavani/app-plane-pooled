@@ -1,5 +1,5 @@
 {
-  "name": "pooled-migrations",
+  "name": "arc-saas-pooled-app-plane-migrations",
   "version": "1.0.0",
   "description": "Package to handle Db migrations for all microservices DBs",
   "main": "lib/migrations.js",
@@ -17,7 +17,10 @@
     "db:migrate-down:product": "db-migrate down --config 'product/database.json' -m 'product/migrations'",
     "db:migrate-reset:product": "db-migrate reset --config 'product/database.json' -m 'product/migrations'",
     "docker:build": "DOCKER_BUILDKIT=1 sudo docker build --build-arg NR_ENABLED=$NR_ENABLED_VALUE -t $IMAGE_REPO_NAME/$npm_package_name:$npm_package_version ../../. -f ./Dockerfile",
-    "docker:push": "docker push $IMAGE_REPO_NAME/$npm_package_name:$npm_package_version"
+    "docker:push": "docker push $IMAGE_REPO_NAME/$npm_package_name:$npm_package_version",
+    "db:migrate:user-tenant": "db-migrate up --config 'user-tenant/database.json' -m 'user-tenant/migrations'",
+    "db:migrate-down:user-tenant": "db-migrate down --config 'user-tenant/database.json' -m 'user-tenant/migrations'",
+    "db:migrate-reset:user-tenant": "db-migrate reset --config 'user-tenant/database.json' -m 'user-tenant/migrations'"
   },
   "author": "",
   "license": "ISC",
