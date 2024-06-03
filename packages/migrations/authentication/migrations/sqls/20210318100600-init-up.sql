@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS main.users (
 	modified_by          uuid   ,
 	deleted              bool DEFAULT false NOT NULL ,
 	last_login           timestamptz   ,
-	auth_client_ids      integer[]   ,
+	auth_client_ids      uuid[]   ,
 	gender               char(1)   ,
 	dob                  date   ,
 	default_tenant_id    uuid   ,
